@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Astro Starter Kit: Basics
 
 ```sh
@@ -52,3 +53,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+=======
+# astro_project_esland
+Creating and proved Astro. First Website with this Framework. This project is based in the Video with Midudev (Astro) and the Original Website: Esland. This Project it's only of prove and practice with Astro (Not commercial). 
+>>>>>>> 3a6610805bc0fca983b639b492b18b352e799b72
