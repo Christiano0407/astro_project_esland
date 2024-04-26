@@ -65,4 +65,4 @@ Creating and proved Astro. First Website with this Framework. This project is ba
 
 > Astro Website and Documentation
 
-[![Open with Astro](https://astro.build/)](https://astro.build/github/withastro/astro/tree/latest/examples/basics)
+[![Open with Astro](https://astro.build/button)](https://astro.build/)
