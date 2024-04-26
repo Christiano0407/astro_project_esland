@@ -3,6 +3,7 @@
     "astro",
     "esland",
     "Midudev",
-    "Preact"
+    "Preact",
+    "tailwindcss"
   ]
 }

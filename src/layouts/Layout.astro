@@ -35,11 +35,11 @@ const { title, description } = Astro.props;
 			rgb(var(--accent-light)) 30%,
 			white 60%
 		);
+		color-scheme: dark;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+		background: #151a36;
 	}
 	code {
 		font-family:
@@ -52,4 +52,17 @@ const { title, description } = Astro.props;
 			Courier New,
 			monospace;
 	}
+	p {
+		color: rgba(255, 255, 255, 0.9); 
+		line-height: 1.4;
+		margin-bottom: 1em; 
+		font-weight: 100;
+		font-size: 1em;
+		letter-spacing: 0.5px;
+	}
+	p strong {
+		color: #fff;
+		font-weight: 700;
+	}
+
 </style>
