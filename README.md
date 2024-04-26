@@ -63,6 +63,20 @@ Creating and proved Astro. First Website with this Framework. This project is ba
 
 # Page Esland to Practice With ASTRO
 
+> This pages it's not official
+
+**This pages it's not official**
+
+> Video and GitHub (repository) To Used For This Project:
+
+[midudev_youtube](https://www.youtube.com/watch?v=zC1kh0jGOLg&t=8s)
+
+[midudev_github](https://github.com/midudev/esland-web)
+
 > Astro Website and Documentation
 
 [Astro](https://astro.build/)
+
+> Design With Tailwind CSS
+
+[TailwindCSS](https://tailwindcss.com/)
