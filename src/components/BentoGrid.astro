@@ -2,11 +2,70 @@
 import BentoGridItem from "./BentoGridItem.astro";
 ---
 
-<section class={`w-full max-w-[1400px] grid lg:grid-cols-10 auto-rows-[30rem] gap-4`}>
+<section class={`w-full max-w-[1400px] grid lg:grid-cols-8 auto-rows-[30rem] gap-4`}>
   
-  <BentoGridItem class="cols-span-10 lg:col-span-4" class="col-span-10 lg:col-span-4" title="bentoGrid__1" />
-  <BentoGridItem class="cols-span-10 lg:col-span-4" class="col-span-10 lg:col-span-4" title="bentoGrid__2" subtitle="subBento_1" />
-  <BentoGridItem class="cols-span-10 lg:col-span-4" class="col-span-10 lg:col-span-4" title="bentoGrid__3" subtitle="subBento_2"/>
-  <BentoGridItem class="cols-span-10 lg:col-span-4" class="col-span-10 lg:col-span-4" title="bentoGrid__4" />
+  <BentoGridItem class="col-span-10 lg:col-span-4" title="ANDORRA: THE ZENIT FROM THE ESLAND AWARDS">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('../../public/img/mountain.png');"
+    >
+    </div>
+
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+    />
+  </BentoGridItem>
+
+  <BentoGridItem class="col-span-10 lg:col-span-4" title="THE WHITE CARPET AND THE GALA">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('../../public/img/pistas.png');"
+    >
+    </div>
+
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+    />
+  </BentoGridItem>
+
+  <BentoGridItem class="col-span-10 lg:col-span-4" title="CHARITY COLLABORATIONS">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('../../public/img/mountain.png');"
+    >
+    </div>
+
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+    />
+  </BentoGridItem>
+
+  <BentoGridItem class="col-span-10 lg:col-span-4" title="ENJOY THE COMMUNITY REDDIT">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('../../public/img/laptop.png');"
+    >
+    </div>
+
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+    />
+  </BentoGridItem>
 
 </section>
