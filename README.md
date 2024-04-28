@@ -78,3 +78,27 @@ Creating and proved Astro. First Website with this Framework. This project is ba
 > Design With Tailwind CSS
 
 [TailwindCSS](https://tailwindcss.com/)
+
+> Web Component To Youtube - Video -
+
+[lite-youtube](https://github.com/justinribeiro/lite-youtube)
+
+```sh
+npm i @justinribeiro/lite-youtube
+# or
+yarn add @justinribeiro/lite-youtube
+```
+
+```javascript
+// After install, import into your project:
+import '@justinribeiro/lite-youtube';
+```
+
+```html
+<!-- === Basic Usage === --->
+<lite-youtube videoid="guJLfqTFfIw"></lite-youtube>
+
+<lite-youtube videoid="guJLfqTFfIw">
+  <a class="lite-youtube-fallback" href="https://www.youtube.com/watch?v=guJLfqTFfIw">Watch on YouTube: "Sample output of devtools-to-video cli tool"</a>
+</lite-youtube>
+```

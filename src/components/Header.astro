@@ -3,14 +3,15 @@ import Logo from "./Logo.astro"
 ---
 
 <header class="fixed w-screen py-4 z-10 backdrop-blur-sm top-0 px-8 lg:px-0">
-  <div class="grid grid-col-3 max-w-7xl mx-auto items-center justify-between">
+  <div class="flex max-w-7xl mx-auto items-center">
    <a href="/" class="col-span-1">
-    <Logo class="w-12" />
+    <Logo class="w-12 my-0 mx-4" />
   </a>
-   <nav class="col-span-1 justify-self-center">
-    <ul class="flex gap-4">
-      <li class="">Info</li>
-      <li class="">Archive</li>
+   <nav class="w-[50%] lg:w-[70%]">
+    <ul class="flex gap-4 p-2">
+      <li class="text-base font-bold uppercase">Info</li>
+      <li class="text-base font-bold uppercase">Archive</li>
+      <li class="text-base font-bold uppercase">Finalist</li>
     </ul>
    </nav>
    <a href="#" class="border rounded-full inline-block border-white px-4 py-2 justify-self-end hover:bg-white hover:text-black duration-300">ESLAND: Documentaly</a>
