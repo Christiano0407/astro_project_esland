@@ -20,13 +20,14 @@ const { title, subtitle } = Astro.props
   group
 `}
 >
+<!-- === Value Spoty (Gradient) === -->
   <div
     class="absolute bottom-0 top-0 z-10 h-full w-full
     bg-gradient-to-b from-transparent from-40% via-[#151836]/50 to-[#151836]/80"
   >
   </div>
-
-  <slot name="image" />
+<!-- === Call Images === -->
+  <slot name="image" /> 
 
   <div
     class="relative z-20 flex h-full select-none flex-col justify-end gap-1 p-4 text-lg md:p-6"
