@@ -1,13 +1,14 @@
 import { defineConfig } from 'astro/config';
-
 import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
 // en => / es => /es (Language)
+import preact from "@astrojs/preact";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()], 
+  integrations: [tailwind(), preact()],
   i18n: {
-    defaultLocale: 'en', 
+    defaultLocale: 'en',
     locales: ['en', 'es'],
     routing: {
       prefixDefaultLocale: false
