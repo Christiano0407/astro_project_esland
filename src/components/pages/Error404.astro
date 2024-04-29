@@ -1,0 +1,14 @@
+---
+import Error404Layout from "../../layouts/Error404Layout.astro";
+import { getI18N } from "../../i18n";
+
+
+const { currentLocale } = Astro
+const i18n = getI18N({currentLocale})
+
+---
+<Error404Layout title=`${i18n.SEO_TITLE}&nbsp; ${new.Date().getFullYear()}` description=`${i18n.SEO_DESCRIPTION}`>
+  <section class="flex relative ob-24 min-h-screen">
+    <!-- Error 404 -->
+  </section>
+</Error404Layout>

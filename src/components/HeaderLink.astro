@@ -1,0 +1,15 @@
+---
+interface Props {
+  checkActive?: boolean
+  href: string
+  class?: string
+}
+
+const {
+  href, 
+  class: className, 
+  checkActive = true, 
+  ...restOfProps
+} = Astro.props
+
+---

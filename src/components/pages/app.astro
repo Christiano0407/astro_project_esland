@@ -1,0 +1,27 @@
+---
+// === Version Spanish 
+import Layout from '../../layouts/Layout.astro';
+import Video from '../Video.astro';
+import Intro from '../Intro.astro';
+import BentoGrid from '../BentoGrid.astro';
+import PreFooter from '../PreFooter.astro';
+import Footer from '../Footer.astro';
+import { getI18N } from '../../i18n';
+
+const {currentLocale} = Astro
+const i18n = getI18N({currentLocale})
+
+---
+
+<Layout 
+title=`${i18n.SEO_TITLE}&nbsp;${new Date().getFullYear()}`
+description={i18n.SEO_DESCRIPTION}
+>
+	<Video />
+	<main>
+		<Intro />
+		<BentoGrid />
+		<PreFooter />
+	</main>
+	<Footer />
+</Layout>

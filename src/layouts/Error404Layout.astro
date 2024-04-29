@@ -1,0 +1,40 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import "@fontsource-variable/onest"; 
+
+
+interface Props { // === Typescript ===
+	title: string;
+	description: string; 
+}
+
+
+const { title, description } = Astro.props
+const { currentLocale } = Astro
+
+---
+<!doctype html>
+<html lang={currentLocale}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+    <link
+      rel="preload"
+      href="/fonts/tomaso.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <slot name="preload" />
+    <ViewTransitions />
+	</head>
+	<body>
+    <main>
+      <slot />
+    </main>
+	</body>
+</html>
