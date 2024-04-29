@@ -12,4 +12,19 @@ const {
   ...restOfProps
 } = Astro.props
 
+const currentPath = Astro.url.pathname // - Connect With Path - 
+const isActive = currentPath === href && checkActive // - Call Path & Connect to Active -
+
 ---
+
+<a 
+href={href}
+class:list={[
+  className, 
+  "border-b-2 uppercase", 
+  isActive ? "border-white" : "border-transparent"
+]}
+{...restOfProps}
+>
+  <slot />
+</a>
