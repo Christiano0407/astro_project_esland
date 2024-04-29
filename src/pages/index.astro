@@ -6,12 +6,16 @@ import Intro from '../components/Intro.astro';
 import BentoGrid from '../components/BentoGrid.astro';
 import PreFooter from '../components/PreFooter.astro';
 import Footer from '../components/Footer.astro';
+import { getI18N } from '../i18n';
+
+const {currentLocale} = Astro
+const i18n = getI18N({currentLocale})
 
 ---
 
 <Layout 
-title="Welcome to celebration of the world Streaming and Content Creating."
-description="Enjoy to the best strimmers and Content Creators of American continent and Europe "
+title=`${i18n.SEO_TITLE}&nbsp;${new Date().getFullYear()}`
+description={i18n.SEO_DESCRIPTION}
 >
 	<Video />
 	<main>
