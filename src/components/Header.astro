@@ -1,10 +1,11 @@
 ---
-import Logo from "./Logo.astro"
-import HeaderLink from "./HeaderLink.astro"
-import Button from "../components/Button"
+// - TS Config jSON => Components -
+import Logo from "@components/Logo.astro" 
+import HeaderLink from "@components/HeaderLink.astro"
+import Button from "@components/Button"
+import MenuIcon from "@components/icons/Menu.astro"
+import CloseIcon from "@components/icons/Close.astro"
 import { getI18N } from "../i18n"
-import MenuIcon from "../components/icons/Menu.astro"
-import CloseIcon from "../components/icons/Close.astro"
 
 
 const { currentLocale } = Astro
@@ -12,7 +13,7 @@ const i18n = getI18N( { currentLocale } )
 
 ---
 
-<header class="fixed w-screen py-4 z-10 backdrop-blur-sm top-0 px-8 lg:px-0">
+<header id="headerNav" class="fixed w-screen py-4 z-10 top-0 px-8 lg:px-0">
   <div class="flex max-w-7xl mx-auto items-center">
    <a href="/" class="col-span-1">
     <Logo class="w-12 my-0 mx-4" />

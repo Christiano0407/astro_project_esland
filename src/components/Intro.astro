@@ -1,17 +1,16 @@
 ---
 import Logo from "./Logo.astro"
+import { getI18N } from '../i18n';
+
+const {currentLocale} = Astro
+const i18n = getI18N({currentLocale})
+
 ---
 
 <section class="text-xl text-left px-20 max-w-[60%] text-pretty mx-auto my-24">
   <Logo class="w-16 m-auto text-white" /> 
-  <h1 class="text-5xl font-semibold text-center text-wrap mx-auto mb-10">Welcome <br /> To Awards ESLAND</h1>
-  <p class="">
-    Cinema has the Oscars, <strong>music has the Grammys and streaming has the ESLAND</strong>. The awards that celebrate the creativity and talent of the best content <strong>creators in the Spanish-speaking</strong> community. 
-  </p>
-  <p>
-    Spain, Latin America and Andorra united by <strong>creators and their communities</strong>, to remember and relive some of the <strong>best moments of the year</strong>.
-  </p>
-  <p>
-    After two galas held, one at the <strong>Palau de la Música Catalana in Barcelona</strong>, and another at the <strong>National Auditorium in Mexico City</strong>, we only have to wait for the third edition in Andorra.
-  </p>
+  <h1 class="text-5xl font-semibold text-center text-wrap mx-auto mb-10">{i18n.INTRO_TITLE} <br />{i18n.INTRO_TITLE_2}</h1>
+  <p set:html={i18n.INTRO_DESCRIPTION_1}></p>
+  <p set:html={i18n.INTRO_DESCRIPTION_2}></p>
+  <p set:html={i18n.INTRO_DESCRIPTION_3}></p>
 </section>

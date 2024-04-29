@@ -7,10 +7,11 @@ interface Props { // === Typescript ===
 }
 
 const { title, description } = Astro.props;
+const { currentLocale } = Astro
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={currentLocale}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
@@ -65,5 +66,20 @@ const { title, description } = Astro.props;
 		color: #fff;
 		font-weight: 700;
 	}
+
+	#headerNav {
+		animation: blur linear both;
+		animation-timeline: scroll();
+		animation-range: 0 500px;
+	}
+	@keyframes blur {
+        to {
+          box-shadow:
+            0px 5px 50px -5px rgba(0, 0, 0, 0.1),
+            0px 0px 0 1px rgba(0, 0, 0, 0.3);
+          background: rgba(0, 0, 0, 0.3);
+          backdrop-filter: blur(10px);
+        }
+      }
 
 </style>
