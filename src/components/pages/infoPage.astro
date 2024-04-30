@@ -1,0 +1,16 @@
+---
+import Layout from "@Layouts/Layout.astro";
+import HeroContainer from "@components/HeroContainer.astro";
+import { getI18N } from "src/i18n";
+
+
+const { currentLocale } = Astro
+const i18n = getI18N({currentLocale})
+
+---
+
+<Layout 
+title=`${i18n.INTRO_TITLE}&nbsp;${new Date().getFullYear()}` 
+description=`${i18n.SEO_DESCRIPTION}&nbsp;${new Date().getFullYear()}`>
+
+</Layout>

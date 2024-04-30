@@ -1,5 +1,5 @@
 // === Typescript With React jS && Type Data - POO - Props - ===
-import styles from '../components/styles/Button.module.css'
+import styles from "../styles/Button.module.css"
 
 interface Props {
   children?: preact.ComponentChildren 
