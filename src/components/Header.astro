@@ -5,11 +5,15 @@ import HeaderLink from "@components/HeaderLink.astro"
 import Button from "@components/Button"
 import MenuIcon from "@components/icons/Menu.astro"
 import CloseIcon from "@components/icons/Close.astro"
-import { getI18N } from "../i18n"
+import { getI18N } from "../i18n/index"
+import { getLangFromUrl, useTranslation, useTranslationPath } from "src/i18n/utils"
 
 
 const { currentLocale } = Astro
 const i18n = getI18N( { currentLocale } )
+const lang = getLangFromUrl(Astro.url); 
+const t = useTranslation(lang); 
+const translatePath = useTranslationPath(lang); 
 
 ---
 
