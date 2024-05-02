@@ -19,16 +19,32 @@ const translatePath = useTranslationPath(lang);
 
 <header id="headerNav" class="fixed w-screen py-4 z-10 top-0 px-8 lg:px-0">
   <div class="flex max-w-7xl mx-auto items-center">
-   <a href="/" class="col-span-1">
-    <Logo class="w-12 my-0 mx-4 h-auto" />
-  </a>
-   <nav class="w-[60%] lg:w-[70%] md:mx-[10px]">
+    <HeaderLink
+     checkActive={false}
+     href={translatePath('/')}
+     class="relative z-10"
+     aria-label={i18n.HEADER.LOGO}
+    >
+    <Logo class="absolute w-10 m-auto blur-sm opacity-0 transition-opacity duration-300 hover:opacity-100 " />
+    <Logo class="w-10" />
+    </HeaderLink>
+    
+   <nav id="headerMenu" class="fixed w-full h-dvh inset-8 bg-[#151a35]/50 md:text-xl lg:text-xl flex flex-col items-center justify-center gap-8 -translate-y-full  transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:flex-row md:translate-y-[initial]">
+
     <ul class="flex gap-4 p-2">
-      <li class="text-base font-bold uppercase">Info</li>
+      <HeaderLink
+       checkActive={true}
+       href={translatePath('/info/')}
+       class="text__glowing"
+      >
+      {t('nav.info')}
+      </HeaderLink>
       <li class="text-base font-bold uppercase">Archive</li>
       <li class="text-base font-bold uppercase">Finalist</li>
     </ul>
    </nav>
+   
    <a href="#" class="border rounded-full inline-block border-white px-4 py-2 justify-self-end hover:bg-white hover:text-black duration-300">ESLAND: Documentaly</a>
+  
   </div>
 </header>
